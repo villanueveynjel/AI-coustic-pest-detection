@@ -1,0 +1,6 @@
+name = "aicoustic-pest-alerts"
+main = "src/index.js"
+compatibility_date = "2026-10-13"
+
+[vars]
+FIREBASE_PROJECT_ID = "capstone-964c0"

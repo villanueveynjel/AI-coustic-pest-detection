@@ -1,0 +1,10 @@
+.env.local
+**/google-services.json
+**/node_modules/
+dist/
+.idea/
+**/.idea/
+android/.gradle/
+android/app/build/
+functions/node_modules/
+cloudflare-worker/.dev.vars

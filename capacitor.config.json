@@ -1,0 +1,13 @@
+{
+  "appId": "com.aicoustic.ricefield",
+  "appName": "AI-coustic Rice Field Monitoring",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  },
+  "plugins": {
+    "FirebaseAuthentication": {
+      "providers": ["google.com"]
+    }
+  }
+}

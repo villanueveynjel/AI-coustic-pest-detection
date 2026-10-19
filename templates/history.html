@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#214f3c">
+  <title>Detection History | AI-coustic Rice Field Monitoring</title>
+  <link rel="stylesheet" href="../static/style.css">
+</head>
+<body class="dashboard-body">
+  <main class="screen history-page">
+    <header class="brand dashboard-brand">
+      <span>AI-coustic<strong>Rice Field Monitoring</strong></span>
+      <button class="notification-button" type="button" aria-label="Open notifications" aria-expanded="false" aria-controls="notification-menu">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M25 12a9 9 0 0 0-18 0c0 10-4 10-4 13h26c0-3-4-3-4-13ZM13 29h6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span class="notification-dot" aria-hidden="true" hidden></span>
+</button>
+<div class="notification-menu" id="notification-menu" hidden>
+  <div class="notification-menu-heading"><strong>Notifications</strong><div class="notification-menu-actions"><button type="button" class="notification-clear">Mark all read</button><button type="button" class="notification-clear-all">Clear all</button></div></div>
+  <p class="notification-read-state" hidden>You’re all caught up.</p>
+</div><button class="profile-button" type="button" aria-label="Open account menu" aria-expanded="false" aria-controls="profile-menu">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="23" fill="#d5e2ce"/><circle cx="24" cy="18" r="7" fill="#214f3c"/><path d="M10 38c1.5-7 6.8-10.5 14-10.5S36.5 31 38 38" fill="#214f3c"/></svg>
+        <span class="profile-check" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10.5" fill="#204d3a" stroke="#f0f5ee" stroke-width="2.5"/><path d="m7.5 9.5 4.5 5 4.5-5" fill="none" stroke="#f0f5ee" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </button>
+      <div class="profile-menu" id="profile-menu" hidden>
+        <a data-account-link href="./account-settings.html"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="5" r="3"/><path d="M2 15c.3-3.2 2.4-5 6-5s5.7 1.8 6 5H2Z"/></svg>Account</a>
+        <a href="login.html">⇥ &nbsp;Log out</a>
+      </div>
+    </header>
+
+    <section class="history-scroll" aria-label="Detection history">
+      <div class="history-content">
+        <h1>Detection History</h1>
+        <p class="history-subtitle">Recorded AI-coustic pest detections from rice field</p>
+
+        <div class="history-filters" role="group" aria-label="Filter detections by pest">
+          <button class="category-filter is-active" type="button" data-category="All" aria-pressed="true">All</button>
+          <button class="category-filter" type="button" data-category="Maya" aria-pressed="false">Maya</button>
+          <button class="category-filter" type="button" data-category="Rodents" aria-pressed="false">Rodents</button>
+          <button class="category-filter" type="button" data-category="Crickets" aria-pressed="false">Crickets</button>
+        </div>
+
+        <div class="history-stats">
+          <article class="history-stat"><strong id="detection-total">0</strong><span>Total Detection</span></article>
+          <article class="history-stat last-detected"><strong>—</strong><span>Last Detected</span></article>
+        </div>
+
+        <section class="detections-panel" aria-label="Recent detections">
+          <header class="detections-heading">
+            <h2>Recent Detections</h2>
+            <div class="sort-control">
+              <button class="sort-toggle" type="button" aria-expanded="false" aria-controls="sort-menu">
+                Filter by:
+                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m3.5 6 4.5 4 4.5-4"/></svg>
+              </button>
+              <div class="sort-menu" id="sort-menu" hidden>
+                <button type="button" data-sort="date">Date</button>
+                <button type="button" data-sort="time">Time</button>
+                <button type="button" data-sort="name-asc">Pest Name A-Z</button>
+                <button type="button" data-sort="name-desc">Pest Name Z-A</button>
+              </div>
+            </div>
+          </header>
+          <div class="detection-list" id="detection-list" aria-live="polite"><p class="empty-history">Loading detections…</p></div>
+        </section>
+      </div>
+    </section>
+
+    <nav class="bottom-nav" aria-label="Main navigation">
+      <a class="nav-item" href="dashboard.html"><svg viewBox="0 0 28 28" aria-hidden="true"><path d="m3 12 11-9 11 9v13H17v-8h-6v8H3V12Z"/></svg><span>Home</span></a>
+      <a class="nav-item selected" href="history.html" aria-current="page"><svg viewBox="0 0 28 28" aria-hidden="true"><path d="M5 3h18v22H5zM5 9h18M5 16h18"/></svg><span>History</span></a>
+      <a class="nav-item" href="settings.html"><svg viewBox="0 0 28 28" aria-hidden="true"><path d="m11 2 6 0 1 3 3 2 3-.5 2 5-2.5 2v3L26 19l-2 5-3-.5-3 2-1 2h-6l-1-3-3-2-3 .5-2-5 2.5-2v-3L2 11l2-5 3 .5 3-2 1-2Z"/><circle cx="14" cy="14" r="4"/></svg><span>Settings</span></a>
+    </nav>
+  </main>
+  <script type="module" src="../static/app.js"></script>
+  <script type="module" src="../static/firebase-backend.js"></script>
+</body>
+</html>
+

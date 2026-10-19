@@ -1,0 +1,10 @@
+{
+  "$schema": "https://developers.cloudflare.com/workers/wrangler/config-schema.json",
+  "name": "aicoustic-push-worker",
+  "main": "index.js",
+  "compatibility_date": "2026-10-13",
+  "vars": {
+    "FIREBASE_PROJECT_ID": "capstone-964c0",
+    "ALLOWED_ORIGINS": "https://localhost,capacitor://localhost,http://localhost:5173"
+  }
+}

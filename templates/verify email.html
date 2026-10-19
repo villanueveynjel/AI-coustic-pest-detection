@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#214f3c">
+  <title>Verify Your Email | AI-coustic Rice Field Monitoring</title>
+  <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+  <main class="screen recovery-page">
+    <header class="brand">AI-coustic<strong>Rice Field Monitoring</strong></header>
+    <section class="recovery-content verify-content">
+      <a class="recovery-back" href="forgot%20password.html"><svg viewBox="0 0 16 20" aria-hidden="true"><path d="m11.5 3-6 7 6 7"/></svg>Back</a>
+      <div class="recovery-icon"><svg viewBox="0 0 64 64" aria-hidden="true"><rect x="5" y="12" width="54" height="40" rx="6"/><path d="m8 16 24 19 24-19"/></svg></div>
+      <h1>Verify Your Email</h1>
+      <p class="recovery-description" id="verify-email-instructions">We’ve sent a verification code to<br><strong id="verify-email-address">your email</strong></p>
+      <form id="verify-email-form" class="recovery-form" novalidate>
+        <div class="verification-code" role="group" aria-label="Six-digit verification code">
+          <input inputmode="numeric" autocomplete="one-time-code" maxlength="1" aria-label="Digit 1" required>
+          <input inputmode="numeric" maxlength="1" aria-label="Digit 2" required>
+          <input inputmode="numeric" maxlength="1" aria-label="Digit 3" required>
+          <input inputmode="numeric" maxlength="1" aria-label="Digit 4" required>
+          <input inputmode="numeric" maxlength="1" aria-label="Digit 5" required>
+          <input inputmode="numeric" maxlength="1" aria-label="Digit 6" required>
+        </div>
+        <p class="resend-line" id="resend-line">Didn’t receive the code? <button type="button" id="resend-code">Resend</button></p>
+        <p class="recovery-status" role="status" aria-live="polite" hidden></p>
+        <button class="primary" id="verify-code-submit" type="submit">Verify Code</button>
+        <button class="primary" id="check-email-verification" type="button" hidden>I’ve Verified My Email</button>
+        <a class="return-login" href="login.html">Back to log in</a>
+      </form>
+    </section>
+    <div class="footer-stripe"></div><div class="footer-block"></div>
+  </main>
+  <script type="module" src="../static/app.js"></script>
+  <script type="module" src="../static/firebase-backend.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#214f3c"><title>Firmware Updates | AI-coustic</title><link rel="stylesheet" href="../static/style.css"></head>
+<body class="dashboard-body"><main class="screen settings-page">
+  <header class="brand dashboard-brand"><span>AI-coustic<strong>Rice Field Monitoring</strong></span><button class="notification-button" type="button" aria-label="Open notifications" aria-expanded="false" aria-controls="notification-menu">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M25 12a9 9 0 0 0-18 0c0 10-4 10-4 13h26c0-3-4-3-4-13ZM13 29h6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span class="notification-dot" aria-hidden="true" hidden></span>
+</button>
+<div class="notification-menu" id="notification-menu" hidden>
+  <div class="notification-menu-heading"><strong>Notifications</strong><div class="notification-menu-actions"><button type="button" class="notification-clear">Mark all read</button><button type="button" class="notification-clear-all">Clear all</button></div></div>
+  <p class="notification-read-state" hidden>You’re all caught up.</p>
+</div><button class="profile-button" type="button" aria-label="Open account menu" aria-expanded="false" aria-controls="profile-menu"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="23" fill="#d5e2ce"/><circle cx="24" cy="18" r="7" fill="#214f3c"/><path d="M10 38c1.5-7 6.8-10.5 14-10.5S36.5 31 38 38" fill="#214f3c"/></svg><span class="profile-check"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10.5" fill="#204d3a" stroke="#f0f5ee" stroke-width="2.5"/><path d="m7.5 9.5 4.5 5 4.5-5" fill="none" stroke="#f0f5ee" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button><div class="profile-menu" id="profile-menu" hidden><a data-account-link href="./account-settings.html">Account</a><a href="login.html">Log out</a></div></header>
+  <section class="settings-scroll"><div class="detail-content">
+    <div class="page-topline"><a class="back-to-settings" href="settings.html">‹ &nbsp;Back</a></div>
+    <div class="detail-title"><span class="large-setting-icon firmware-icon"><svg viewBox="0 0 32 32"><path d="M11 4h10v4h4v4h4v8h-4v4h-4v4H11v-4H7v-4H3v-8h4V8h4V4Z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="16" cy="16" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="m23 5 4-3m-1 9 4-1m-7 18 3 2" stroke="currentColor" stroke-width="2"/></svg></span><div><h1>Firmware Updates</h1><p>Device Software</p></div></div>
+    <h2 class="firmware-section-title">Current Firmware</h2>
+    <section class="firmware-card">
+      <div class="firmware-version"><strong>v1.0.0</strong><span class="firmware-badge" id="firmware-badge">UP TO DATE</span></div>
+      <div class="firmware-last-update"><span>Last Update</span><strong>28 Sep 2026 &nbsp;|&nbsp; 9:40 AM</strong></div>
+      <button class="check-updates-button" type="button" id="check-updates">CHECK FOR UPDATES</button>
+      <p class="settings-toast firmware-toast" id="firmware-message" role="status" aria-live="polite" hidden></p>
+    </section>
+  </div></section>
+  <nav class="bottom-nav" aria-label="Main navigation"><a class="nav-item" href="dashboard.html"><svg viewBox="0 0 28 28"><path d="m3 12 11-9 11 9v13H17v-8h-6v8H3V12Z"/></svg><span>Home</span></a><a class="nav-item" href="history.html"><svg viewBox="0 0 28 28"><path d="M5 3h18v22H5zM5 9h18M5 16h18"/></svg><span>History</span></a><a class="nav-item selected" href="settings.html"><svg viewBox="0 0 28 28"><path d="m11 2 6 0 1 3 3 2 3-.5 2 5-2.5 2v3L26 19l-2 5-3-.5-3 2-1 2-6 0-1-3-3-2-3 .5-2-5 2.5-2v-3L2 11l2-5 3 .5 3-2 1-2Z"/><circle cx="14" cy="14" r="4"/></svg><span>Settings</span></a></nav>
+</main><script type="module" src="../static/app.js"></script>
+  <script type="module" src="../static/firebase-backend.js"></script></body></html>
